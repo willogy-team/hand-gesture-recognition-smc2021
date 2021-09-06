@@ -1,0 +1,66 @@
+Namespace(amp=True, batch_size=32, checkpoint_path='./runs/mfh_classifier_pretrainImageNet_7_30_32_0.0001_256_2048_8_20.0.pth', dataset='QA10SCENES', input_dir='/media/data-huy/dataset/QADataset/SceneCategory_Frame_final_7classes', n_classes=7, run_name='default_run', seed=1, suffix_name='test_mfh_classifier_pretrainImageNet_7_30_32_0.0001_256_2048_8_20.0', test_scene='Scene2', train_scene='Scene1')
+Using a 128x128 encoder
+***** CHECKPOINTING *****
+Model restored from checkpoint.
+Self-supervised training epoch 150
+Classifier training epoch 11
+*************************
+Selected optimization level O2:  FP16 training with FP32 batchnorm and FP32 master weights.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O2
+cast_model_type        : torch.float16
+patch_torch_functions  : False
+keep_batchnorm_fp32    : True
+master_weights         : True
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O2
+cast_model_type        : torch.float16
+patch_torch_functions  : False
+keep_batchnorm_fp32    : True
+master_weights         : True
+loss_scale             : dynamic
+[+] list(set(all_labels)):  [0, 1, 2, 3, 4, 5, 6]
+[+] list(set(all_lgt_glb_mlp)):  [0, 1, 2, 3, 4, 5, 6]
+[+] list(set(all_lgt_glb_lin)):  [0, 1, 2, 3, 4, 5, 6]
+[INFO] test_accuracy_mlp_classifier: 0.311 
+[INFO] micro_mlp_classifier: 0.311 
+[INFO] macro_mlp_classifier: 0.127 
+[INFO] test_accuracy_linear_classifier: 0.300 
+[INFO] micro_linear_classifier: 0.300 
+[INFO] macro_linear_classifier: 0.125 
+
+[INFO] In mlp, for each class: 
+               precision    recall  f1-score   support
+
+           0     0.3486    0.7003    0.4655      9344
+           1     0.3035    0.3703    0.3336      7086
+           2     0.0969    0.0137    0.0240      5176
+           3     0.0508    0.0301    0.0378      2125
+           4     0.0667    0.0093    0.0163      2807
+           5     0.0000    0.0000    0.0000      2639
+           6     0.0247    0.0050    0.0084       794
+
+    accuracy                         0.3114     29971
+   macro avg     0.1273    0.1613    0.1265     29971
+weighted avg     0.2077    0.3114    0.2326     29971
+
+[INFO] In lin, for each class: 
+               precision    recall  f1-score   support
+
+           0     0.3403    0.7055    0.4591      9344
+           1     0.2636    0.3045    0.2826      7086
+           2     0.1130    0.0168    0.0293      5176
+           3     0.0618    0.0207    0.0310      2125
+           4     0.1416    0.0406    0.0631      2807
+           5     0.0000    0.0000    0.0000      2639
+           6     0.0440    0.0050    0.0090       794
+
+    accuracy                         0.3003     29971
+   macro avg     0.1377    0.1562    0.1249     29971
+weighted avg     0.2067    0.3003    0.2234     29971
+

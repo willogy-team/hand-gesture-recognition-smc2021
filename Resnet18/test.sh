@@ -1,0 +1,1 @@
+python test.py -mp "./models/Scene1/resnet18_7_32_3_224_.pth" -td "/media/data-huy/dataset/QADataset/SceneCategory_Frame_final_7classes/Scene2" -ncl 7 -iz 224 -bz 32 > "./output/train1_test2"

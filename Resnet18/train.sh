@@ -1,0 +1,1 @@
+python train.py -bb resnet18 -trd "/media/data-huy/dataset/QADataset/SceneCategory_Frame_final_7classes/Scene1" -ncl 7 -e 3 -iz 224 -bz 32
