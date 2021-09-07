@@ -71,9 +71,11 @@ pip install -r requirements.txt
 
 ## MFH dataset
 
+<img src="./images/hand_washing_scenes_and_steps.JPG" width="480">
+
 Link download the MFH dataset: [Google Drive](https://drive.google.com/file/d/1BPuj5HGIOFwE8JQmHobgmnL05ifA60In/view?usp=sharing).
 
-Download the zip file and extract its contents to free space where you have access to.
+Download the zip file and extract its contents to a free space where you have access to.
 
 Below, we will show how to use Amdim or Resnet18 to train and test on this dataset.
 
@@ -124,6 +126,14 @@ After the training completes, there will be a folder ```./Amdim/runs``` that sto
 Similarly, there is a script file named ```test.sh``` which you can use for testing.
 
 **Note:** Because the .pth file is named after the arguments'values, you need to keep these corresponding arguments in the file ```test.sh``` with the same values in ```train.sh``` so that the test phase can find the correct file.
+
+Some arguments to change in ```test.sh```:
+
+```sh
+TEST_SCENE (The scene to evaluate the trained model on: "Scene1", "Scene2", or "Scene3", ...)
+--input_dir (The (absolute) path to the MFH dataset folder)
+--checkpoint_path (The path to the checkpoint file ".pth" in the folder "runs")
+```
 
 Change the permission for the file to execute:
 
@@ -203,6 +213,8 @@ After running the ```test.sh``` file, there will be an output file storing resul
 ```
 
 ## License
+
+MIT License
 
 ## Acknowledgement
 
