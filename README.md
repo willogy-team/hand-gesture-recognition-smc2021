@@ -210,6 +210,12 @@ After running the ```test.sh``` file, there will be an output file storing resul
 ## Citation
 
 ```
+@article{vo2021fine,
+  title={Fine-grained Hand Gesture Recognition in Multi-viewpoint Hand Hygiene},
+  author={Vo, Huy Q and Do, Tuong and Pham, Vi C and Nguyen, Duy and Duong, An T and Tran, Quang D},
+  journal={arXiv preprint arXiv:2109.02917},
+  year={2021}
+}
 ```
 
 ## License
