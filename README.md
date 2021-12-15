@@ -1,5 +1,12 @@
 # Fine-grained Hand Gesture Recognition in Multi-viewpoint Hand Hygiene
 
+[![Generic badge](https://img.shields.io/badge/python-3.7.9-blue.svg)](https://www.python.org/downloads/release/python-379/)
+[![Generic badge](https://img.shields.io/badge/cuda-10.1-f0e22.svg)](https://developer.nvidia.com/cuda-10.1-download-archive-base)
+[![Generic badge](https://img.shields.io/badge/pytorch-1.4.0-f50e22.svg)](https://pytorch.org/get-started/previous-versions/)
+[![Generic badge](https://img.shields.io/badge/tensorflow-2.3.2-e67e22.svg)](https://www.tensorflow.org/install)
+
+For more information, find out the complete details of our research at [|arXiv Preprint|](https://arxiv.org/pdf/2109.02917.pdf).
+
 In this repo, we provide the code for 2 models that are used for evaluation on the MFH dataset: Amdim and Resnet18. The MFH dataset can be downloaded at this [Google Drive link](https://drive.google.com/file/d/1BPuj5HGIOFwE8JQmHobgmnL05ifA60In/view?usp=sharing).
 
 
